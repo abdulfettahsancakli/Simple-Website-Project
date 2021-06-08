@@ -1,0 +1,238 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="WebProject.css">
+    <title>  WEB PROJECT </title>
+</head>
+
+<body>
+     
+    <div class="header">
+        <img src="images/fenerbahçe.jpg" id="fb"> </img>
+        <img src="images/tc.jpg" id="tc"></img>
+        <div class="hdinternal">
+            <h2> FETTAH SANCAKLI </h2>
+            <div class="hdcontent">
+        
+                <div class="clockcontainer">
+                    <ul class="time">
+                    <li>
+                        <div class="digit hoursFirst">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="digit hoursLast">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="digit minutesFirst">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="digit minutesLast">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="digit secondsFirst">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="digit secondsLast">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </li>
+                 </ul>
+                </div>
+               
+               
+            </div>
+            
+        
+        </div>
+    </div>
+    <div class="container">
+		<div class="row" style="height:30px ;width:100px;">
+			<div id="scrtext" style="width:400px; text-align:center; height:25px; "> </div>
+		</div>
+		<div class="row">
+        
+            <div class="col-md-3" id="images">
+                <table class="content-table">
+                    <h2> TOP SCORERS </h2>
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Position </th>
+                        <th>Goal </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td> 1    <img src="images/vedat.jpg" width="65px" height="65px" ></img></td>
+                        <td>Vedat Muriqi</td>
+                        <td>FORWARD</td>
+                        <td>14 </td>
+                      </tr>
+                      <tr class="active-row">
+                        <td>2   <img src="images/kruse.jpg" width="65px" height="65px" ></img>   </td>
+                        <td>Max Kruse</td>
+                        <td>MIDFIELDER</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>3  <img src="images/serdar.jpg" width="65px" height="65px" > </td>
+                        <td>Serdar Aziz</td>
+                        <td>DEFENCE</td>
+                        <td>4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+            </div>
+            
+            <div class="col-md-6" id="graph">
+                <h2 id="graphbaslik">GRAPH</h2>
+                <div>
+
+                    <div class="form-group">
+                        <label for="chartName">Chart Name:</label>
+                        <input type="text" id="chartName"  size="15">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="yAxisName">Y-Axis Name:</label>
+                        <input type="text" id="yAxisName"  size="15">
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="yAxismaxValue"><p>Max Value:</p></label>
+                        <input type="number" id="yAxismaxValue">
+                    </div>
+
+
+                </div>
+
+
+                <div>
+                    <h2 id="chartelements">INFO</h2>
+                    <div class="form-group" id="xaxis">
+                        <label for="xAxisName">X Axis Name :  </label>
+                        <input type="text" id="xAxisName"  size="15">
+                    </div>
+
+                    <div class="form-group" id="yaxisvalue">
+                        <label for="yAxismaxValue"> Max Value : </label>
+                        <input type="number" id="xAxismaxValue"  >
+                    </div>
+
+                    <div class="form-group" id="colors">
+                        <label id="lblcolor"> Colors : </label>       
+                        <label for="yellow" id="lblyellow">Yellow</label>
+                        <input type="radio" class="colors" value="yellow" name="colors[]" checked >
+                        <label for="blue" id="lblblue">Blue</label>
+                        <input type="radio" class="colors" value="blue" name="colors[]">
+                    </div>
+
+                    <button onclick="addElement()" id="addbutton">Add</button>
+
+                </div>
+                <button onclick="clearChart()" id="clearbutton">Clear</button>
+                <button onclick="createChart()">Create Chart</button>
+
+                <div id="chartCover">
+                    <div id="chartTitle"></div>
+                    <div id="chartYAxis"></div>
+                    <div id="chartArea" class="chartArea"></div>
+                </div>
+            </div>
+
+            <div class="col-md-3" id="questions" >
+                <h2> QUESTIONS </h2>
+               
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            What is the COVID 19?
+                        </div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                Coronaviruses are a type of virus. 
+                                There are many different kinds, and some cause disease.
+                                 A newly identified coronavirus, SARS-CoV-2, has caused a worldwide pandemic of respiratory illness, called COVID-19.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-item-header">
+                            How does the new Coronavirus spread ?
+                        </div>
+                        <div class="accordion-item-body">
+                            <div class="accordion-item-body-content">
+                                As of now, researchers know that the new coronavirus is spread through droplets released into the air when an infected person coughs or sneezes. 
+                                The droplets generally do not travel more than a few feet, and they fall to the ground (or onto surfaces) in a few seconds — this is why social and physical distancing is effective in preventing the spread.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script src="WebProject.js">
+
+    
+    
+</script>
+
+</html>

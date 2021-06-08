@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 150px;
+    background-color:navy;
+}
+
+.hdinternal{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin :auto auto;
+    background-color: navy;
+}
+.hdinternal h2{
+    color: white;
+    text-align:left;
+    font-size: 50px;
+    margin-left: 150px;
+    padding-top: 40px;
+    
+}
+.hdcontent{
+        height: 100%;
+        display: table;
+        float: left;
+        position: relative;
+        top:-90;
+        bottom: 0;
+        left: 575px;
+        width: 600px;
+        height: 120px;
+        background-color: yellow;
+    
+    
+}
+
+#fb{
+    background-color: navy;
+    width: 150px;
+    height: 150px;
+    border: navy;
+    position: absolute;
+   
+}
+.container{
+    width: 100%;
+    height: 100%;
+  }
+#tc{
+  left:1175px;
+  width: 180px;
+  height: 150px;
+  border: #101010;
+  position: absolute;
+ 
+}
+body{
+  background-color: yellow;
+ 
+}
+
+#images{
+      
+      position: absolute;
+      left: 0px;
+      margin: 0 auto;
+      background-color: yellow;
+      width: 100%;
+      height: 100%;
+      
+}
+#questions{
+  position: absolute;
+  right: 0px;
+  width: 100%;
+  height: 850px;
+  background-color: yellow;
+}
+#graph{
+position: absolute;;
+float: left;
+left: 450px;
+background-color: yellow;
+height: 100%;
+width: 100%;
+margin-right: 50px;
+
+}
+#scrtext{
+  top: 170px;
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 20px;
+}
+ 
+h2 {
+  text-align: left;
+  
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\25BE";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\25B4";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+
+}
+.row {
+  width: 150%;
+  height: 150%;
+  background-color: yellow;
+ 
+}
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+	
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 7px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: white;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+ 
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* CLOCK OPERATINOS -------------------------------------------------------------------*/
+.digit{
+    height: 120px;
+    width: 75px;
+    position: relative;
+    display: inline-block;   
+}
+.digit .line{
+    background-color: navy;
+    display: inline-block;
+    position: absolute;
+}
+.digit .line:nth-child(1){
+    top: 0;
+    left: 0;
+    right:0;
+    margin: auto;
+    height: 10px;
+    width: 75px;
+}
+.digit .line:nth-child(2){
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 10px;
+    width: 75px;
+}
+.digit .line:nth-child(3){
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 10px;
+    width: 75px;
+}
+.digit .line:nth-child(4){
+    top: 10px;
+    left: 0;
+    margin: auto;
+    height:50px;
+    width: 10px;
+    background-color: #navy;
+}
+.digit .line:nth-child(5){
+    top: 10px;
+    right: 0;
+    margin: auto;
+    height: 50px;
+    width: 10px;
+    background-color: navy;
+}
+.digit .line:nth-child(6){
+    bottom: 10px;
+    left: 0;
+    margin: auto;
+    height: 50px;
+    width: 10px;
+    background-color: navy;
+}
+.digit .line:nth-child(7){
+    bottom: 10px;
+    right: 0;
+    margin: auto;
+    height: 50px;
+    width: 10px;
+    background-color: navy;
+}
+
+/* for 1*/
+.digit.one .line:nth-child(1),
+.digit.one .line:nth-child(2),
+.digit.one .line:nth-child(3),
+.digit.one .line:nth-child(4),
+.digit.one .line:nth-child(6){
+    opacity: 0;
+}
+
+/* for 2*/
+.digit.two .line:nth-child(4),
+.digit.two .line:nth-child(7){
+    opacity: 0;
+}
+
+/* for 3 */
+.digit.three .line:nth-child(4),
+.digit.three .line:nth-child(6)
+{
+opacity: 0; 
+}
+
+/* for 4 */
+.digit.four .line:nth-child(1),
+.digit.four .line:nth-child(3),
+.digit.four .line:nth-child(6){
+    opacity: 0;
+}
+
+/* for 5 */
+.digit.five .line:nth-child(5),
+.digit.five .line:nth-child(6){
+    opacity: 0;
+}
+
+/* for 6 */
+.digit.six .line:nth-child(5){
+    opacity: 0;
+}
+
+/*for 7 */
+.digit.seven .line:nth-child(2),
+.digit.seven .line:nth-child(3),
+.digit.seven .line:nth-child(4),
+.digit.seven .line:nth-child(6)
+{
+opacity: 0;
+}
+
+/* for 8 */
+.digit.nine .line:nth-child(6){
+    opacity: 0;
+}
+
+.digit.zero .line:nth-child(2){
+    opacity: 0;
+}
+
+.time{
+padding: 0;
+margin: 0;
+display: inline-block;
+list-style-type: none;
+position: relative;
+top:  50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+
+.time li{
+    display: inline-block;
+    margin: 4px;
+    position: relative;
+}
+.time li:nth-child(2),
+.time li:nth-child(4){
+margin-right: 25px;
+}
+
+.time li:nth-child(2)::before,
+.time li:nth-child(4)::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 500px;
+    right: -30px;
+    top: 20px;
+}
+
+.time  li:nth-child(2)::after,
+.time  li:nth-child(4)::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 500px;
+    right: -30px;
+    bottom: 20px;
+}
+
+.clockcontainer{
+    width: 100%;
+    height: 100%;
+}
+
+
+#form{
+  font-size: 16px;
+  background-color: navy;
+  height: 900px;
+  width: 200%;
+  padding-left: 10px;
+  color: white;
+
+}
+
+h6{
+  display: inline;
+  left: auto;
+  color: white;
+}
+#maxvalue{
+  margin-left:5px;
+  margin-top: 5px;
+}
+#graphname{
+  margin-top: 5px;
+}
+#yaxis{
+  margin-left: 1px;
+  margin-top: 5px;
+}
+#createbuton{
+  margin-bottom: 5px;
+}
+#xvalue{
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+#xaxisname{
+  margin-bottom: 5px;
+}
+#yellow{
+  margin-left: 50px;
+}
+
+#chartName{
+  margin-left: 5px;
+}
+input[type=number]{
+  margin-left: 20px;
+  width: 140px;
+} 
+button{
+  margin-top: -20px;
+  margin-left: 150px;
+}
+
+#chartElements{
+  margin-left: 330px;
+  margin-top: -220px;
+}
+ #xaxis{
+   margin-left: 265px;
+ }
+ #yaxisvalue{
+   margin-left: 265px;
+ }
+ #xAxisName{
+   margin-left: 5px;
+ }
+ #colors{
+   margin-right: 10px;
+   margin-top: -10px;
+   margin-left: 265px;
+ }
+#lblyellow{
+  margin-left: 50px;
+}
+lblcolor{
+  margin-left:30px;
+}
+#lblblue{
+  margin-left: 10px;
+}
+#addbutton{
+  width: 50px;
+  margin-top: 7px;
+  margin-left: 370px;
+}
+#clearbutton{
+  
+  width: 50px;
+  margin-top: -27px;
+  margin-left: 450px;
+}
+
+
+#chartCover {
+    display: none;
+    height: 230px;
+    position: relative;
+}
+
+#chartTitle {
+    padding: 5px 5px 40px 5px;
+}
+
+#chartYAxis {
+    position: absolute;
+    bottom: 50px;
+    width: 10%;
+    transform: rotate(270deg);
+    font-weight: bolder;
+
+}
+#chartArea {
+    left: 100px;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    background-color: #f3f3f3;
+    display: none;
+}
